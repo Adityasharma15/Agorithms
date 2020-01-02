@@ -15,7 +15,7 @@ int main()
 	{
 		if(n%i==0)
 		{
-			if(i!=n)
+			if(n/i!=i)
 				cout << i << endl << n/i<< endl;
 
 			else

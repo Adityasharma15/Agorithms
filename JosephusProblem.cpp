@@ -1,22 +1,23 @@
-#include <stdio.h> 
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
 
-int josephus(int n, int k) 
+ll josephus(ll n , ll k)
+{
+	if(n==2)
+		return 1;
+
+	return (josephus(n-1,k) + k-1)%n + 1;
+}
+
+int main()
 { 
-if (n == 1) 
-	return 1; 
-else
-	/* The position returned by josephus(n - 1, k) is adjusted because the 
-	recursive call josephus(n - 1, k) considers the original position 
-	k%n + 1 as position 1 */
-	return (josephus(n - 1, k) + k-1) % n + 1; 
-} 
-
-// Driver Program to test above function 
-int main() 
-{ 
-int n = 14; 
-int k = 2; 
-printf("The chosen place is %d", josephus(n, k)); 
-return 0; 
-} 
-
+		ll n,k;
+		do
+		{
+		cin >> n >> k;
+			
+		cout << josephus(n,k) + k-1 << endl;
+		}while(n!=0 && k!=0);
+		
+}
