@@ -13,8 +13,6 @@ void printSubstring(ll number, string s)
   }
 }
 
-
-
 int main()
 {
 	ios_base::sync_with_stdio(0);
