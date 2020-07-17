@@ -1,5 +1,6 @@
 // Minimum number of jumps
 // https://www.geeksforgeeks.org/minimum-number-of-jumps-to-reach-end-of-a-given-array/
+// https://www.youtube.com/watch?v=PgesVhQ-Nrc
 
 #include<bits/stdc++.h>
 #define ll long long
