@@ -57,6 +57,8 @@ int main()
 
      for(ll i = 0; i<dp.size(); i++)
         {
+	  // if that box alonse is used
+	  // so storing its height
           dp[i] = boxes[i].second;
           heights[i] = boxes[i].second;
         }
